@@ -1,10 +1,10 @@
 class Solution {
     public int findDuplicate(int[] nums) {
        boolean b[] = new boolean[nums.length];
-       for(int i : nums)
+       for(int num : nums)
        {
-         if(b[i]) return i;
-         b[i] = true;
+         if(b[num]) return num;
+         b[num] = true;
        }
        return -1;
     }
